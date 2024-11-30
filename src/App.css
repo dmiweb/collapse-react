@@ -1,0 +1,51 @@
+.collapse {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.collapse-btn {
+  width: 120px;
+  height: 38px;
+  border: 1px solid #0d6efd;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #0d6efd;
+  cursor: pointer;
+}
+
+.collapse-btn:focus {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  box-shadow: 0 0 0 .25rem rgba(49, 132, 253, 0.5);
+}
+
+.spoiler {
+  max-width: 600px;
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.3s;
+}
+
+.spoiler--entering {
+  transform: scaleY(1);
+}
+
+.spoiler--entered {
+  transform: scaleY(1);
+}
+
+.spoiler--exiting {
+  transform: scaleY(0);
+}
+
+.spoiler--exited {
+  transform: scaleY(0);
+}
